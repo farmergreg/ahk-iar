@@ -11,7 +11,7 @@ To use:
 - Press ENTER
 - An Explorer Window will open. Place this script inside the folder. Make sure to edit it and put your username and password in.
 - Also create a shortcut to your web browser in this folder so that it will also automatically start.
-- Setup your web browser so that it's homepage is IamResponding.com
+- Setup your web browser so that the homepage is IamResponding.com
 - Install AutoHotKey ( https://www.autohotkey.com/ )
 - Reboot the computer. It should:
   - Automatically login
