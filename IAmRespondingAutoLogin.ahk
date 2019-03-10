@@ -13,6 +13,7 @@ PASS=YOUR_PASSWORD_HERE
 
 SetTitleMatchMode, 1
 Loop {
+	;Wait for the IAR window to open
 	WinWait, IamResponding.com
 	WinGet, active_id, ID, IamResponding.com
 	Sleep, 4000
@@ -25,5 +26,7 @@ Loop {
 	Sleep, 4000
 	WinActivate, ahk_id %active_id%
 	SendInput,{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Enter}
+	
+	;Wait for the IAR window to close
 	WinWaitClose, ahk_id %active_id%
 }
