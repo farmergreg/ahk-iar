@@ -11,6 +11,8 @@ AGENCY=YOUR_AGENCY_HERE
 USER=YOUR_USER_HERE
 PASS=YOUR_PASSWORD_HERE
 
+SetTimer,KeepIamRespondingOnTop,60000
+
 SetTitleMatchMode, 1
 Loop {
 	;Wait for the IAR window to open
@@ -29,4 +31,8 @@ Loop {
 	
 	;Wait for the IAR window to close
 	WinWaitClose, ahk_id %active_id%
+}
+
+KeepIamRespondingOnTop() {
+	WinActivate, IamResponding.com
 }
